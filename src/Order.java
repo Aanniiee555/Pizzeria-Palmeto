@@ -1,8 +1,4 @@
-package am.pizzeria.palmetto;
 
-/**
- * add ability to order several types of pizzas
- */
 public class Order {
 
     private static final int MAXIMUM_NUMBER_OF_INGREDIENTS = 7;

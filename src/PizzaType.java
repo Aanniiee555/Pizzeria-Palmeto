@@ -1,5 +1,3 @@
-package am.pizzeria.palmetto;
-
 public enum PizzaType {
 
     REGULAR(1d),

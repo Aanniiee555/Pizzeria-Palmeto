@@ -1,5 +1,3 @@
-package am.pizzeria.palmetto;
-
 public interface PizzaTypeInterface {
 
     String CALZONE = "CALZONE";

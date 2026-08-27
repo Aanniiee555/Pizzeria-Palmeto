@@ -1,12 +1,4 @@
-package am.pizzeria.palmetto;
 
-/**
- * The 7 toppings the Pizzeria currently offers, with their price.
- * This did not exist in the original exercise files - it is needed
- * so that addIngredient() calls (which only store the ingredient's
- * name as a String on Pizza/Order) can still be priced when we build
- * the receipt.
- */
 public enum Ingredient {
 
     TOMATO_PASTE("Tomato paste", 1.0),

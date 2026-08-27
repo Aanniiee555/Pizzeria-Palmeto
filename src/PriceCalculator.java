@@ -1,9 +1,4 @@
-package am.pizzeria.palmetto;
 
-/**
- * Turns an Order's pizza type + ingredient list into a price,
- * so printCheck()/the receipt file can show real totals.
- */
 public final class PriceCalculator {
 
     private PriceCalculator() {

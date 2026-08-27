@@ -1,11 +1,6 @@
-package am.pizzeria.palmetto;
-
 import java.util.Arrays;
 import java.util.Objects;
 
-/**
- * YAGNI, KISS, DRY
- */
 public class Pizza {
 
     public static final Pizza REGULAR = new Pizza("Regular", PizzaType.REGULAR.name(), new String[7]);
