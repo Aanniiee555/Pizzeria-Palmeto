@@ -8,18 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-/**
- * Pizzeria "Palmetto" - console front end.
- * <p>
- * Task 1 (Chapter 13, "Reading Console Input"): order details are typed
- * in at the console through a BufferedReader wrapped around an
- * InputStreamReader connected to System.in, instead of being hard-coded.
- * <p>
- * Task 2 (Chapter 13, "Reading and Writing Files"): the final check is
- * written to receipt.txt with a PrintWriter inside a try-with-resources
- * block, so the file stream is always closed automatically, even if
- * something goes wrong while writing.
- */
+
 public class PizzeriaConsoleApp {
 
     private static final String RECEIPT_FILE = "receipt.txt";
@@ -68,10 +57,7 @@ public class PizzeriaConsoleApp {
         }
     }
 
-    /**
-     * Task 1: prompts for one pizza's details at the console and returns the
-     * resulting Order, with ingredients already attached.
-     */
+ 
     private static Order takeOrder(BufferedReader console) throws IOException {
         System.out.println();
         int customerNumber = readInt(console, "Customer number: ");
@@ -173,11 +159,6 @@ public class PizzeriaConsoleApp {
         }
     }
 
-    /**
-     * Task 2: writes every order plus a grand total to receipt.txt.
-     * try-with-resources guarantees the PrintWriter/FileWriter is closed
-     * even if an exception happens partway through writing.
-     */
     private static void writeReceipt(List<Order> orders) {
         double total = 0.0;
 
