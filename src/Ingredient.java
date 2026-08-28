@@ -26,10 +26,6 @@ public enum Ingredient {
         return price;
     }
 
-    /**
-     * Looks an ingredient up by the text the customer typed at the console
-     * (case-insensitive, ignores surrounding whitespace).
-     */
     public static Ingredient fromLabel(String label) {
         if (label == null) {
             return null;
