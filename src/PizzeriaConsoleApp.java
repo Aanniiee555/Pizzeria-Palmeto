@@ -83,9 +83,7 @@ public class PizzeriaConsoleApp {
                 System.out.println("Unknown ingredient, please pick one from the menu above.");
                 continue;
             }
-            // Store the canonical label from the enum, not the user's raw
-            // (possibly differently-cased) input, so later lookups in
-            // writeReceipt() always succeed.
+           
             order.addIngredient(ingredient.getLabel());
         }
 
