@@ -47,10 +47,7 @@ public class PizzeriaConsoleApp {
         writeReceipt(orders);
     }
 
-    /**
-     * Signals that the console input stream ended (readLine() returned null)
-     * while we were still expecting more input.
-     */
+
     private static class EndOfInputException extends IOException {
         EndOfInputException() {
             super("End of input reached");
