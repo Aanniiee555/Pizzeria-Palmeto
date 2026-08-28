@@ -24,13 +24,13 @@ public final class PriceCalculator {
         return total;
     }
 
-    /** Price of a single pizza (base + toppings), before quantity. */
+  
     public static double pizzaUnitPrice(Order order) {
         Pizza pizza = order.getPizza();
         return basePrice(pizza.getType()) + ingredientsPrice(pizza.getIngredients(), pizza.getIngredientsCount());
     }
 
-    /** Total price for the order line, i.e. unit price * quantity. */
+    
     public static double orderAmount(Order order) {
         return pizzaUnitPrice(order) * order.getQuantity();
     }
