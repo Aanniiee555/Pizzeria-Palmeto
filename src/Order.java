@@ -61,10 +61,6 @@ public class Order {
 
     }
 
-
-    /**
-     * 20 * 26 = 520  -> n^2
-     */
     private boolean isAllLatin(String name) {
         for (int i = 0; i < name.length(); i++) {
             char c = name.charAt(i);
